@@ -1,0 +1,63 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    
+    <title>Document</title>
+</head>
+<body>
+  <header class="container ">
+    <div class="header__content__">
+      <a href="index.html" class="logo-link">
+        <img width="128" src="img/llg.png" alt="logo: pol" class="logo-image">
+      </a>
+      <div class="header__content">
+        <a class="header_i" href="index.html">Список пациентов</a>
+        <a class="header_i" href="doc.html">Список докторов</a>
+        <a class="header_i center" href="visit.html">Список записей</a>
+        <form>
+        </div>
+     
+        <input class="header_search header_search_id" type="text" id="vsId" class="pat " placeholder="Search Id">
+        <input  class="header_search header_search_id" type="button" value="Поиск" onclick="searhsId()">
+      
+        </form>
+      </div>
+    
+  </header>
+  <main>
+    <form class="names">
+        <input type="text" id="cardNumber" class="pat cardNumber header_search" placeholder="Номер карты пациента">
+        <input type="text" id="date" class="pat date header_search" placeholder="Дата(гггг-мм-дд)">
+        <input type="text" id="doctor" class="pat doctor header_search" placeholder="Доктор(Id)">
+        <input type="button" value="Регистрация визита" class="pat patB header_search" onclick="reginfo()">
+    </form>
+    <form class="names">
+        <input type="text" id="cause" class="pat cause header_search" placeholder="Симптомы">
+        <input type="text" id="registrationId" class="pat registrationId header_search" placeholder="Id регистрации">
+        <input type="text" id="solution" class="pat solution header_search" placeholder="Заключение доктора">
+        <input type="button" value="Результат посещения" class="pat patB header_search" onclick="visitinfo()">
+    </form>
+    <form class="patU update">
+      <input type="button" value="Обновить" class="pat upd header_search" onclick="test()">
+      <div class="note"></div>
+    </form>
+    <div class="visits">
+      </div>
+      
+  
+    <script src="/js/visit.js"></script>
+  </main>
+</body>
+</html>   

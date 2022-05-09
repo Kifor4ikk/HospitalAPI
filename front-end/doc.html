@@ -1,0 +1,72 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    
+    <title>Document</title>
+</head>
+<body>
+  <header class="container ">
+    <div class="header__content__">
+      <a href="index.html" class="logo-link">
+        <img width="128" src="img/llg.png" alt="logo: pol" class="logo-image">
+      </a>
+      <div class="header__contentD">
+          <a class="header_i" href="index.html">Список пациентов</a>
+          <a class="header_i center" href="doc.html">Список докторов</a>
+          <a class="header_i" href="visit.html">Список записей</a>
+        </div>
+    </div>
+    <div class="header__content3">
+      <input class="header_search" type="text" id="docId" class="pat " placeholder="Search Id">
+      <input  class="header_search" type="button" value="Поиск" onclick="searhsId()">
+      <input class="header_search header_search_id" type="text" id="docQuality" class="pat " placeholder="Search quality">
+      <input  class="header_search header_search_id" type="button" value="Поиск" onclick="searhsQuality()">
+      <input class="header_search header_search_cause" type="text" id="nameS" class="pat " placeholder="Name">
+      <input class="header_search header_search_cause" type="text" id="surnameS" class="pat " placeholder="Surname">
+      <input  class="header_search header_search_cause" type="button" value="Поиск" onclick="searhsNS()">      
+    </div>
+  </header>
+    <form class="names doc">
+        <input type="text" id="name" class="pat header_search" placeholder="Name">
+        <input type="text" id="surname" class="pat surname header_search" placeholder="Surname">
+        <input type="text" id="quality" class="pat quality header_search" placeholder="Quality">
+        <input type="text" id="age" class="pat age header_search" placeholder="Age">
+        <input type="button" value="Ввод" class="pat patB header_search" onclick="myinfo()">
+        <input type="text" id="idU" class="pat upd header_search" placeholder="Id">
+        <input type="button" value="Изменение" class="pat patB upd header_search" onclick="update()">
+        
+    </form id = "days">
+    <form class="names update">
+        <input type="checkbox" class="pat check workDay">Monday
+        <input type="checkbox" class="pat check workDay">Tuesday
+        <input type="checkbox" class="pat check workDay">Wednesday
+        <input type="checkbox" class="pat check workDay">Thursday
+        <input type="checkbox" class="pat check workDay">Friday
+        <input type="checkbox" class="pat check workDay">Saturday
+        <input type="checkbox" class="pat check workDay">Sunday
+    </form>
+
+    <form class="patU update">
+      <input type="button" value="Обновить" class="pat upd header_search" onclick="test()">
+      <input type="button" value="Вывод квалификаций" class="pat upd header_search" onclick="quality()">
+      <div class="note"></div>
+    </form>
+    <div class="doctors names Info">
+      
+      </div>
+    <script src="/js/doctor.js"></script>
+    
+</body>
+</html>   
