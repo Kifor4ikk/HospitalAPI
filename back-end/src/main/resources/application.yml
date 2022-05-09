@@ -1,0 +1,12 @@
+server.port: 1488
+server.address: localhost
+---
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:1489/PatientBase
+    username: postgres
+    password: pass
